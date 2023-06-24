@@ -1,0 +1,24 @@
+/*variable for the colors*/
+:root{
+    --general: #021740;
+    --pinky: #9E91B7;
+    --button: #F2CEF2;
+}
+
+/*...then let's reset the default styles*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .biographie h1 {
+      font-size: 4em;
+    }
+  }
