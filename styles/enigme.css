@@ -230,10 +230,11 @@ footer {
 @media screen and (max-width: 900px) {
   #enigme {
     height: 135vh;
+    margin-top: 20%;
   }
   #enigme .container {
     display: block;
-    margin: 0 5%;
+    margin: 0 5% 10% 13%;
   }
   .guess {
     width: 100%;
