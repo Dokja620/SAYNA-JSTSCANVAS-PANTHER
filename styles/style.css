@@ -90,54 +90,65 @@ footer {
   width: 30%;
 }
 
-/*Deuxième partie*/
+/*slider next button*/
+.next-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background: var(--general);
+  transition: 0.5s all ease-out;
+  cursor: pointer;
+  position: absolute;
+  top: 125px;
+  right: 2%;
+  z-index: 9;
+}
+.next-button:hover {
+  filter: drop-shadow(0 0 15px #fff);
+}
+
+.next span {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 2em;
+}
+
+/*slider cards*/
 #buste {
-  height: 25vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 20%;
-}
-
-.card {
-  background-color: #021740;
-  display: flex;
-  width: 100vw;
-}
-.card .card-image {
   position: relative;
-  height: max-content;
-  width: 200px;
-  height: 220px;
-  margin: -10px;
-}
-.card .card-image img {
-  height: 120%;
-  width: 100%;
-  object-fit: cover;
-}
-.card .card-content {
-  padding: 10px 15px;
-  text-align: justify;
-  width: 290px;
+  margin-left: 75px;
+  background: var(--general);
 }
 
-@media screen and (max-width: 500px) {
-  #buste {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 20% 0;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
-  .card .card-content {
-    width: 85%;
-    padding-top: 70px;
-  }
+.chars-slider {
+  display: flex;
+  scroll-behavior: smooth;
 }
+.chars-slider::-webkit-scrollbar {
+  display: none;
+}
+.chars-slider .chars-card {
+  display: flex;
+  margin-right: 40px;
+}
+.chars-slider .chars-card .chars-img {
+  position: relative;
+  height: 250px;
+}
+.chars-slider .chars-card .chars-img .thumb {
+  height: 250px;
+}
+.chars-slider .chars-infos {
+  width: 250px;
+  text-align: justify;
+  padding: 10px;
+}
+.chars-slider .chars-infos .chars-descr {
+  font-size: 1.1em;
+}
+
 /*Troisième partie*/
 #naissance {
   margin: 25% 0;
@@ -313,9 +324,6 @@ form {
 @media screen and (max-width: 900px) {
   #hommage {
     background: url(../images/Accueil/Pantherhome1..png) top center/90vw no-repeat;
-  }
-  #buste {
-    height: 70vh;
   }
   .biographie {
     text-align: center;
