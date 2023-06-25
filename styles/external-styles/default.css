@@ -22,6 +22,7 @@
       font-size: 4em;
     }
   }
+
 /*voir plus*/
 .more{
   position: relative;
@@ -46,6 +47,7 @@
 .more:hover::after{
   width: 24%;
 }
+
 /*animation on scroll*/
 .scroll{
   transform: translateX(-50%);
@@ -61,5 +63,42 @@
 @media(perfers-reduced-motion){
   .scroll{
     transition: none;
+  }
+}
+
+/*zoom effect elements*/
+h1, h2, .portrait img{
+  transition: .25s all ease-in-out;
+  cursor: pointer;
+}
+
+h1:hover, h2:hover, .portrait img:hover{
+  transform: scale(1.01);
+}
+
+/*Custom cursor*/
+body{
+  height: 100vh;
+}
+.cursor{
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+.expand{
+  animation: cursorClick .5s forwards;
+}
+
+@keyframes cursorClick {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(3);
+  }
+  100%{
+    transform: scale(1);  
+    opacity: 0;
+    filter: blur(5px);
   }
 }
