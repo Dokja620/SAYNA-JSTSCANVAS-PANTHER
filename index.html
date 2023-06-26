@@ -257,24 +257,24 @@
             </div>
         </div>
     </section>
-    <form method="post" onsubmit="return validated()">
-        <div id="formulaire" class="form scroll">
-            <div class="head">
-                <p>Besoin de l’intervention du Wakanda ?</p>
-                <h3>Contactez nous !</h3>
-            </div>
-            <div class="inputs">
-                <input type="text" placeholder="Nom" name="name"> <br>
-                <div id="name-error">Veuillez remplir le champ avant soumettre ceci</div>
-                <input type="email" placeholder="Email" name="mail"> <br>
-                <div id="email-error">Veuillez remplir le champ avant soumettre ceci</div>
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Messages"></textarea>
-                <div class="btn">
-                    <button type="button">ENVOYER</button>
-                </div>
-            </div>
+    <section id="form">
+        <div class="formulaire scroll">
+            <p>Besoin de l'Intervention du Wakanda ?</p>
+            <h3>Contactez nous !</h3>
+            <form class="subscribe" method="post" name="form">
+                <div class="form1"></div>
+                <input type="text" name="" placeholder="name">
+                <div id="name_error">Veuillez remplir ce champ pour continuer...</div>
+                <div class="form2"></div>
+                <input type="text" name="" placeholder="email">
+                <div id="email_error">Veuillez remplir ce champ pour continuer...</div>
+                <div class="form3"></div>
+                <textarea name="sms" placeholder="Message"></textarea>
+                <div class="form4"></div>
+                <button type="button">ENVOYER !</button>
+            </form>
         </div>
-    </form>
+    </section>
 
 </main>
 <footer>

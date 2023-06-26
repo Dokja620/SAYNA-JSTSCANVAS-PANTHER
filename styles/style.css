@@ -62,7 +62,7 @@ h4 {
 
 /*The bgs*/
 body {
-  background: #11213F url("../images/Allpages/arrière_plan.png") no-repeat;
+  background: #021740 url("../images/Allpages/arrière_plan.png") no-repeat;
   background-size: cover;
   font-size: 12px;
   color: white;
@@ -235,7 +235,7 @@ footer {
 }
 
 /*formulaire part*/
-form {
+#form {
   height: 100vh;
   display: grid;
   align-content: center;
@@ -243,81 +243,81 @@ form {
   margin: 0 0 25%;
 }
 
-.form {
-  margin: 0 auto;
+.formulaire {
   text-align: center;
-  border-radius: 3em;
-  padding: 20px;
-  color: #021740;
+  margin: 0 auto;
+  padding: 25px 0;
+  max-width: 720px;
+  width: 80%;
+  border-radius: 70px;
+  color: var(--general);
   background: linear-gradient(to bottom, #fff, transparent);
-  width: 40vw;
-  min-width: 270px;
+  font-family: "texte";
 }
-.form input, .form textarea {
+.formulaire input, .formulaire textarea {
   background: transparent;
+  padding: 10px;
   margin: 5px 0;
-  width: 55%;
-  height: 40px;
-  border-radius: 20px;
-  padding: 10px 10px;
-  font-family: "Texte";
-  border: 2px solid var(--general);
+  border: 1px solid var(--general);
+  border-radius: 25px;
+  max-width: 400px;
+  width: 50%;
+}
+.formulaire input::placeholder, .formulaire textarea::placeholder {
   color: var(--general);
 }
-.form input:focus, .form textarea:focus {
+.formulaire input:focus, .formulaire textarea:focus {
   outline: none;
 }
-.form textarea {
-  height: 60%;
+.formulaire textarea {
+  border-radius: 15px;
+  height: 200px;
 }
-.form button {
+.formulaire button {
   width: 150px;
   padding: 10px 0;
   border-radius: 38px;
-  margin: 3% auto;
+  margin: 7px auto;
   background-color: var(--button);
   border: none;
-  justify-content: center;
   cursor: pointer;
   transition: 0.25s all ease-out;
 }
-.form button:hover {
-  filter: drop-shadow(0 0 10px #021740);
+.formulaire button:hover {
+  filter: drop-shadow(0 0 7px #021740);
   color: var(--general);
 }
-
-::placeholder {
-  color: var(--general);
-  font-size: 20px;
-}
-
-#name-error, #email-error {
-  margin: 5px auto;
+.formulaire #name_error, .formulaire #email_error {
+  margin: 3px auto 7px;
+  font-size: 16px;
+  max-width: 400px;
   width: 50%;
-  font-size: 1em;
   color: #C62828;
   background: rgba(255, 0, 0, 0.1);
-  padding: 5px 8px;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 3px;
   border: 1px solid var(--general);
   display: none;
 }
 
-@media screen and (max-width: 900px) {
-  .form {
-    width: 70vw;
+@media screen and (max-width: 720px) {
+  .formulaire {
+    border-radius: 35px;
   }
-  .form input, .form textarea {
-    width: 90%;
+  .formulaire h3 {
+    font-size: 3em;
   }
-  .form textarea {
-    height: 50%;
+  .formulaire input, .formulaire textarea {
+    width: 85%;
   }
 }
-@media screen and (max-width: 720px) {
-  .form h3 {
-    font-size: 2em;
-    font-weight: 600;
+@media screen and (max-width: 480px) {
+  .formulaire {
+    border-radius: 35px;
+    margin: 7px 3% 7px 12%;
+  }
+  .formulaire h3 {
+    font-size: 2.7em;
   }
 }
 /*partie responsive let's make things simple and use only one or two media query*/

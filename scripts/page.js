@@ -7,19 +7,19 @@ menuBurger.addEventListener('click', () => {
 })
 
 //custom cursor
-// const cursor = document.querySelector('.cursor')
+const cursor = document.querySelector('.cursor')
 
-// document.addEventListener("mousemove", e =>{
-//     cursor.setAttribute("style", "top: "+(e.pageY - 25)+"px; left: "+(e.pageX - 25)+"px;")
-// })
+document.addEventListener("mousemove", e =>{
+    cursor.setAttribute("style", "top: "+(e.pageY - 25)+"px; left: "+(e.pageX - 25)+"px;")
+})
 
-// document.addEventListener('click', () =>{
-//     cursor.classList.add("expand")
+document.addEventListener('click', () =>{
+    cursor.classList.add("expand")
     
-//     setTimeout(() => {
-//         cursor.classList.remove("expand")
-//     }, 500);
-// })
+    setTimeout(() => {
+        cursor.classList.remove("expand")
+    }, 500);
+})
 
 //animation on scroll... Using next-gen css feature
 //Intersection Observer... It tell if an element is visible in the DOM
