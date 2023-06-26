@@ -20,6 +20,36 @@ document.addEventListener('click', () =>{
         cursor.classList.remove("expand")
     }, 500);
 })
+//Validation popup
+function showPopup() {
+    let nameInput = document.getElementById("name")
+    let emailInput = document.getElementById("email")
+    let messageInput = document.getElementById("message")
+    let errorDiv = document.getElementById("error")
+    let username = nameInput.value.trim()
+    let email = emailInput.value.trim()
+    let message = messageInput.value.trim()
+    //validated fields
+    if (username === "" || email === "" || message === "") {
+        errorDiv.style.display = "block"
+        return false
+    }
+    //clear error message
+    errorDiv.style.display = "none"
+    //Show popup
+    let popup = document.getElementById("popup")
+    popup.style.display = "block"
+    //clear form inputs after submission
+    nameInput.value = ""
+    emailInput.value = ""
+    messageInput.value = ""
+    
+    return false
+}
+function closePopup(){
+    let popup = document.getElementById("popup")
+    popup.style.display = "none"
+}
 
 //animation on scroll... Using next-gen css feature
 //Intersection Observer... It tell if an element is visible in the DOM

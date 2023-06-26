@@ -234,7 +234,7 @@ footer {
     background: url(../images/Accueil/Pantherhome7.png) center/cover no-repeat;
     margin: 0 0 25%;
 }
-.formulaire{
+form{
     text-align: center;
     margin: 0 auto;
     padding: 25px 0;
@@ -263,20 +263,7 @@ footer {
         border-radius: 15px;
         height: 200px;
     }
-    button{
-        width: 150px;
-        padding: 10px 0;
-        border-radius: 38px;
-        margin: 7px auto;
-        background-color: var(--button);
-        border: none;
-        cursor: pointer;
-        transition: .25s all ease-out;
-        &:hover{
-            filter: drop-shadow(0 0 7px #021740);
-            color: var(--general);
-        }
-    }
+    
     #name_error, #email_error{
         margin: 3px auto 7px;
         font-size: 16px;
@@ -290,8 +277,47 @@ footer {
         display: none;
     }
 }
+button{
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 38px;
+    margin: 7px auto;
+    background-color: var(--button);
+    border: none;
+    cursor: pointer;
+    transition: .25s all ease-out;
+    &:hover{
+        filter: drop-shadow(0 0 7px #021740);
+        color: var(--general);
+    }
+}
+.popup{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #02174073;
+    backdrop-filter: blur(7px);
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    display: none;
+    h2{
+        margin-top: 35vh;
+    }
+    button{
+        padding: 10px;
+        width: 100px;
+        margin-top: 25px;
+    }
+}
+.error{
+    color: red;
+}
 @media screen and (max-width: 720px) {
-    .formulaire{
+    form{
         border-radius: 35px;
         h3{
             font-size: 3em;
@@ -302,7 +328,7 @@ footer {
     }
 }
 @media screen and (max-width: 480px) {
-    .formulaire{
+    form{
         border-radius: 35px;
         margin: 7px 3% 7px 12%;
         h3{

@@ -243,7 +243,7 @@ footer {
   margin: 0 0 25%;
 }
 
-.formulaire {
+form {
   text-align: center;
   margin: 0 auto;
   padding: 25px 0;
@@ -254,7 +254,7 @@ footer {
   background: linear-gradient(to bottom, #fff, transparent);
   font-family: "texte";
 }
-.formulaire input, .formulaire textarea {
+form input, form textarea {
   background: transparent;
   padding: 10px;
   margin: 5px 0;
@@ -263,31 +263,17 @@ footer {
   max-width: 400px;
   width: 50%;
 }
-.formulaire input::placeholder, .formulaire textarea::placeholder {
+form input::placeholder, form textarea::placeholder {
   color: var(--general);
 }
-.formulaire input:focus, .formulaire textarea:focus {
+form input:focus, form textarea:focus {
   outline: none;
 }
-.formulaire textarea {
+form textarea {
   border-radius: 15px;
   height: 200px;
 }
-.formulaire button {
-  width: 150px;
-  padding: 10px 0;
-  border-radius: 38px;
-  margin: 7px auto;
-  background-color: var(--button);
-  border: none;
-  cursor: pointer;
-  transition: 0.25s all ease-out;
-}
-.formulaire button:hover {
-  filter: drop-shadow(0 0 7px #021740);
-  color: var(--general);
-}
-.formulaire #name_error, .formulaire #email_error {
+form #name_error, form #email_error {
   margin: 3px auto 7px;
   font-size: 16px;
   max-width: 400px;
@@ -300,23 +286,65 @@ footer {
   display: none;
 }
 
+button {
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 38px;
+  margin: 7px auto;
+  background-color: var(--button);
+  border: none;
+  cursor: pointer;
+  transition: 0.25s all ease-out;
+}
+button:hover {
+  filter: drop-shadow(0 0 7px #021740);
+  color: var(--general);
+}
+
+.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(2, 23, 64, 0.4509803922);
+  backdrop-filter: blur(7px);
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+  display: none;
+}
+.popup h2 {
+  margin-top: 35vh;
+}
+.popup button {
+  padding: 10px;
+  width: 100px;
+  margin-top: 25px;
+}
+
+.error {
+  color: red;
+}
+
 @media screen and (max-width: 720px) {
-  .formulaire {
+  form {
     border-radius: 35px;
   }
-  .formulaire h3 {
+  form h3 {
     font-size: 3em;
   }
-  .formulaire input, .formulaire textarea {
+  form input, form textarea {
     width: 85%;
   }
 }
 @media screen and (max-width: 480px) {
-  .formulaire {
+  form {
     border-radius: 35px;
     margin: 7px 3% 7px 12%;
   }
-  .formulaire h3 {
+  form h3 {
     font-size: 2.7em;
   }
 }
