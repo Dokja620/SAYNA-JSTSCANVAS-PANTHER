@@ -1,15 +1,16 @@
-# SAYNA-HTMLCSS-PANTHER
-ÉVALUATION - BLACK PANTHER - HTML - CSS
-Je pense qu'il est temps de mettre à jour🤖 avant de commencer le deuxième évaluation❕❗...
-Well our aim is the highest grade📝 sooo it's the least that we have to do😊
+# SAYNA-JSTSCANVAS-PANTHER
+ÉVALUATION - BLACK PANTHER - JAVASCRIPT - TYPESCRIPT - CANVAS
+
+Deuxième évaluation🤖 Franchement avec mes compétence actuel; ça vas être compliquer😥...
+Qui ne tente rien n'as rien😁🥴 and As I said our aim is the highest grade📝
+Challenge accepted! Let's do it😊👌
 
 Les Quelques changement notable seront:
-- Utilisation de SASS👀
-- Page avec une meilleur version de la version mobile📱
-- Challenge temps additionnel pour faire tout ça de 0 en une demi journée🕗 
-- Tout est parfaitement fait😊... à part le popup je crois que 95% de tout est fait😉😜
+- La base de celui-ci est la version mise à jour👨‍💻 de la première évaluation😉
+- 100% de tout ce qui à été demander seras fait🤓
+- Struggling with the slider😂... Everything else is done!
 
-!!! SAYNA here I come
+!!! I did it... In 7days; away from hub😥 and with no really enough connection✌. But I did it I'm just Happy😊.
 
     Si vous lisez ceci; pour que tout soit plus claire... 
     lisez mon SCSS au lieu du CSS
