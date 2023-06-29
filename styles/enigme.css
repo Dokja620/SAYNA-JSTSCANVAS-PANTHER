@@ -25,7 +25,6 @@
 
 /* Typography */
 h1,
-h2,
 h3,
 h4,
 p,
@@ -42,6 +41,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Titre H2';
   font-size: 2.6em;
   color: var(--pinky);
 }
@@ -72,15 +72,8 @@ span {
   font-family: "Enigme";
 }
 
-/* Background */
-html,
+/*The bgs*/
 body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
   background: #11213F url("../images/Allpages/arrière_plan.png") no-repeat;
   background-size: cover;
   font-size: 12px;
