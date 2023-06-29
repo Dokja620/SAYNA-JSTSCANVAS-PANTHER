@@ -101,7 +101,7 @@
 
 .menu-burger {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 }
@@ -118,6 +118,7 @@
 @media screen and (max-width: 900px) {
   .menu-burger {
     display: block;
+    z-index: 3;
   }
   .navbar {
     margin: 0;
@@ -126,7 +127,7 @@
     margin: 30px 50px;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     background-color: #021740;
     backdrop-filter: blur(7px);
     width: 100vw;
@@ -138,6 +139,7 @@
     font-size: 3em;
     margin-left: -100vw;
     transition: all 0.5s ease-in-out;
+    z-index: 2;
   }
   .nav-links ul {
     display: flex;

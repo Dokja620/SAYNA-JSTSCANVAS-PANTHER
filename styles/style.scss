@@ -58,8 +58,14 @@
 
 /*The bgs*/
 //Body
+html, body {
+    height: 100%;
+}
+  
 body {
-    background: #021740 url("../images/Allpages/arrière_plan.png") no-repeat;
+    margin: 0;
+    padding: 0;
+    background: #11213F url("../images/Allpages/arrière_plan.png") no-repeat;
     background-size: cover;
     font-size: 12px;
     color: white;
@@ -112,36 +118,11 @@ footer {
 
 /*slider cards*/
 #buste{
+    min-height: 100vh;
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: center;
     margin-left: 75px;
-    background: var(--general);
-}
-.chars-slider{
-    display: flex;
-    scroll-behavior: smooth;
-    &::-webkit-scrollbar{
-        display: none;
-    }
-    .chars-card{
-        display: flex;
-        margin-right: 40px;
-        .chars-img{
-            position: relative;
-            height: 250px;
-            .thumb{
-                height: 250px;
-            }
-        }
-    }
-    .chars-infos{
-        width: 250px;
-        text-align: justify;
-        padding: 10px;
-        .chars-descr{
-            font-size: 1.1em;
-        }
-    }
 }
 /*Troisième partie*/
 #naissance{

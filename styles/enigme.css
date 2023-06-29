@@ -65,7 +65,14 @@ span {
 }
 
 /*The bgs*/
+/* Make the bg works*/
+html, body {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   background: #11213F url("../images/Allpages/arrière_plan.png") no-repeat;
   background-size: cover;
   font-size: 12px;
@@ -112,68 +119,121 @@ footer {
   height: 100vh;
   display: flex;
   align-items: center;
+  padding: 0 10px 0 13%;
 }
 
-.container {
-  display: flex;
-  margin: 0 75px;
+.left {
+  width: 35%;
+  margin-right: 5%;
 }
 
-.guess {
-  width: 70%;
-}
-.guess .guess1 {
-  word-spacing: 15px;
-  letter-spacing: 5px;
-  font-size: 1.7em;
-  color: var(--pinky);
-}
-.guess .transcription {
-  margin-top: 30px;
+.right {
   width: 50%;
-  min-width: 280px;
+  margin-left: 5%;
 }
-.guess .transcription p {
-  letter-spacing: 2px;
-}
-.guess .answer {
-  margin-top: 50px;
-}
-.guess .answer input {
-  background: transparent;
-  margin: 5px 0;
-  width: 450px;
-  height: 40px;
-  border-radius: 20px;
-  padding: 10px 10px;
-  font-family: "Texte";
-  border: 2px solid var(--button);
-  color: var(--button);
-}
-.guess .answer button {
-  width: 150px;
+
+button {
+  font-family: "texte";
+  width: 155px;
   padding: 10px 0;
   border-radius: 38px;
-  margin: 7px auto;
+  margin: 7px 0;
   background-color: var(--button);
   border: none;
-  justify-content: center;
   cursor: pointer;
   transition: 0.25s all ease-out;
 }
-.guess .answer button:hover {
+button:hover {
   filter: drop-shadow(0 0 7px #F2CEF2);
   color: var(--general);
 }
 
-.did-you-know {
-  width: 30%;
-  text-align: center;
-  margin: auto 0;
+.description {
+  text-align: justify;
 }
-.did-you-know .fact {
+.description h2 {
+  text-decoration: underline;
+}
+
+.whut {
+  font-size: 1.2em;
+}
+
+.important {
+  font-family: "texte";
+  font-size: 0.9em;
+}
+
+.enigme input {
+  background: transparent;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid var(--button);
+  border-radius: 25px;
+  max-width: 400px;
+  width: 100%;
+  color: #F2CEF2;
+}
+.enigme input::placeholder {
+  color: var(--button);
+}
+.enigme input:focus {
+  outline: none;
+}
+
+.question {
+  margin: 25px 0;
+}
+
+.wut {
+  font-size: 1.5em;
+  word-spacing: 10px;
+  color: var(--pinky);
+}
+
+.hint {
+  text-align: center;
+  padding: 120px 5px;
+  background: url(../images/Enigme/Pantherenigme2.png) right center/100% no-repeat;
+}
+
+.popup {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+}
+
+#congratsPopup {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(17, 33, 63, 0.368627451);
+  backdrop-filter: blur(5px);
+}
+
+#secondPopup {
+  min-width: 250px;
+  width: 30%;
+  height: max-content;
   padding: 25px;
-  background: url(../images/Enigme/Pantherenigme2.png) center/100% no-repeat;
+  background: linear-gradient(to bottom, var(--button), var(--general));
+}
+#secondPopup span {
+  font-family: "texte";
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#secondPopup .figma {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+#secondPopup .figma .txt {
+  margin-left: 5px;
 }
 
 /*Responsive*/
@@ -231,24 +291,12 @@ footer {
   #enigme {
     height: 135vh;
     margin-top: 20%;
-  }
-  #enigme .container {
     display: block;
-    margin: 0 5% 10% 13%;
   }
-  .guess {
-    width: 100%;
-  }
-  .guess .answer input {
-    width: 100%;
-  }
-  .guess .div {
-    text-align: center;
-  }
-  .did-you-know {
-    margin: 10% auto 0;
-    max-width: 400px;
-    width: 100%;
+  .left, .right {
+    margin: 0;
+    width: 90%;
+    min-width: 250px;
   }
 }
 

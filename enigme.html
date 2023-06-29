@@ -10,6 +10,9 @@
     <link rel="shortcut icon" href="./images/logo_souris_BP2_blanc.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/enigme.css">
     <script defer src="./scripts/page.js"></script>
+
+    <!-- enigme script -->
+    <script defer src="./scripts/enigme.js"></script>
 </head>
 <body>
 <!-- Custom cursor -->
@@ -76,18 +79,67 @@
         </div>
     </section>
     <section id="enigme">
-        <div class="container">
-            <div class="guess">
-                <div class="guess1 scroll">
+        <div class="left scroll">
+            <div class="description" id="first">
+                <h2>ENIGME NUMERO <span style="font-family: 'texte';">1</span></h2>
+                <p>
+                    Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
+                    et apprend par la même occasion la première valeur d’une Dora Milaje !
+                </p>
+                <div class="question">
+                    <p><span class="wut">
+                        '' SI JE SUIS FIDELE C’EST
+                        A CE TRONE PEU IMPORTE QUI
+                        MONTE DESSUS ''
+                    </span></p>
+                </div>
+                <p class="whut">Alors, as tu la réponse? <span class="important">*les accents sont importants!</span></p>
+            </div>
+            <div class="description" id="second">
+                <h2>ENIGME NUMERO <span style="font-family: 'texte';">2</span></h2>
+                <p>
+                    Une anecdote intéressante est écrite juste en dessous mais elle est codée par un
+                    code césar également appelé code de chiffrement par décalage . L’alphabet a été
+                    décalé, trouve la clé de chiffrement qui te permettrait de retrouver les lettres et
+                    retranscris la phrase :
+                </p>
+                <div class="question">
                     <p>
-                        <span>
-                           '' SI JE SUIS FIDELE C’EST A CE TRONE <br>
-                            PEU IMPORTE QUI MONTE DESSUS ''
-                        </span>
+                        Tm nqtu lmjcbm i Wikstivl mv Kitqnwzvqm. Qt aioqb lm ti dqttm lwvb mab
+                        wzqoqviqzm Zgiv Kwwotmz mb moitmumvb ti dqttm ycq i dc viqbzm tm
+                        uwcdmumvb xwtqbqycm lma jtiks xivbpmza
                     </p>
                 </div>
-                <div class="transcription scroll">
-                    <p>Voici la transicription de l’alphabet :</p><br>
+                <p class="whut">Alors, as tu la réponse? <span class="important">*les accents sont importants!</span></p>
+            </div>
+            <div class="description" id="third">
+                <h2>ENIGME NUMERO <span style="font-family: 'texte';">3</span></h2>
+                <p>
+                    Lorsque T’Challa mange l’herbe en forme de coeur pour recevoir les pouvoirs du
+                    Black Panther, il voit son père afin de lui demander conseil afin de devenir un bon
+                    roi. Cette scène rappelle la même scène d’un certain film où un père dit à son fils de
+                    ne pas oublier qui il est et d’où il vient. Quel est ce film ?
+                </p>
+                <div class="question">
+                    <p>
+                        01001100 01000101 00100000 01010010 01001111 01001001
+                        00100000 01001100 01001001 01001111 01001110 00001101
+                        00001010
+                    </p>
+                </div>
+                <p class="whut">Alors, as tu la réponse? <span class="important">*les accents sont importants!</span></p>
+            </div>
+
+            <!-- The enigma -->
+            <div class="enigme">
+                <input type="text" placeholder="Your answer">
+                <button>Next</button>
+            </div>
+        </div>
+        <div class="right scroll">
+            <div class="hint" id="one">
+                <p>Voici la transicription de l’alphabet :</p>
+                <div class="transcription">
                     <p>
                         A= <span>A</span>; B= <span>B</span>; 
                         C= <span>C</span>; D= <span>D</span>; 
@@ -104,26 +156,48 @@
                         Y= <span>Y</span>; Z= <span>Z</span> 
                     </p>
                 </div>
-                <div class="answer scroll">
-                    <p>Alors, as tu la réponse ?</p><br>
-                    <div class="div">
-                        <input type="text" placeholder="Réponse"><br>
-                        <button type="button">ENVOYER</button>
-                    </div>
-                </div>
             </div>
-            <div class="did-you-know scroll">
-                <div class="fact">
-                    <p>
-                        Le savais tu ? <br>
-                        Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est 
-                        la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une 
-                        phrase. Et si tu regardais quel symbole revient le plus souvent ?
-                    </p>
-                </div>
+            <div class="hint" id="two">
+                <p>
+                    Le savais tu ? <br><br>
+                    Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français
+                    est la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans
+                    une phrase. Et si tu regardais quel symbole revient le plus souvent pour en
+                    déduire son décalage dans l’alphabet ? 
+                </p>
+            </div>
+            <div class="hint" id="three">
+                <p>
+                    Le savais tu ? <br><br>
+                    Le philosophe Francis Bacon inventa en 1605 un alphabet bilitère, uniquement
+                    composé des deux lettres A et B. C'est en quelque sorte l'ancêtre du système
+                    binaire des ordinateurs actuels car toute lettre pouvait être construite avec un
+                    enchainement précis de ces deux lettres, tandis que le système binaire
+                    informatique utilise 0 et 1.
+                </p>
             </div>
         </div>
     </section>
+
+    <!-- Congrats Popup -->
+    <div id="congratsPopup" class="popup">
+        <h2>Congratulations!</h2>
+        <p>You guessed all the answers correctly.</p>
+    </div>
+
+    <!-- You did it Popup -->
+    <div id="secondPopup" class="popup">
+        <p>TON INITIATION EST TERMINE!</p>
+        <button id="restartButton">Restart Game</button>
+        <button id="redirectButton">Go to Homepage</button>
+        <div class="figma">
+            <div class="log"><img src="./images/Enigme/figma_logo.svg" alt="Logo figma"></div>
+            <div class="txt">
+                <p>Coming Soon</p>
+                <p>Time Remaining: <span id="timer">00:00:00</span></p>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
     <div class="foot scroll">

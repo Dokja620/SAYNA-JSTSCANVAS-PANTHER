@@ -61,13 +61,22 @@
 
 /*The bgs*/
 //Body
+/* Make the bg works*/
+html, body {
+    height: 100%;
+}
+  
 body {
+    margin: 0;
+    padding: 0;
     background: #11213F url("../images/Allpages/arrière_plan.png") no-repeat;
     background-size: cover;
     font-size: 12px;
     color: white;
     overflow-x: hidden;
 }
+  
+
 //Footer
 footer {
     height: max-content;
@@ -106,67 +115,113 @@ footer {
     height: 100vh;
     display: flex;
     align-items: center;
+    padding: 0 10px 0 13%;
 }
-.container{
-    display: flex;
-    margin: 0 75px;
+.left{
+    width: 35%;
+    margin-right: 5%;
 }
-.guess{
-    width: 70%;
-    .guess1{
-        word-spacing: 15px;
-        letter-spacing: 5px;
-        font-size: 1.7em;
-        color: var(--pinky);
+.right{
+    width: 50%;
+    margin-left: 5%;
+}
+button{
+    font-family: 'texte';
+    width: 155px;
+    padding: 10px 0;
+    border-radius: 38px;
+    margin: 7px 0;
+    background-color: var(--button);
+    border: none;
+    cursor: pointer;
+    transition: .25s all ease-out;
+    &:hover{
+        filter: drop-shadow(0 0 7px #F2CEF2);
+        color: var(--general);
     }
-    .transcription{
-        margin-top: 30px;
-        width: 50%;
-        min-width: 280px;
-        p{
-            letter-spacing: 2px;
-        }
+}
+.description{
+    text-align: justify;
+    h2{
+        text-decoration: underline;
     }
-    .answer{
-        margin-top: 50px;
-        input{
-            background: transparent;
-            margin: 5px 0;
-            width: 450px;
-            height: 40px;
-            border-radius: 20px;
-            padding: 10px 10px;
-            font-family: 'Texte';
-            border: 2px solid var(--button);
+}
+.whut{
+    font-size: 1.2em;
+}
+.important{
+    font-family: 'texte';
+    font-size: .9em;
+}
+.enigme{
+    input{
+        background: transparent;
+        padding: 10px;
+        margin: 5px 0;
+        border: 2px solid var(--button);
+        border-radius: 25px;
+        max-width: 400px;
+        width: 100%;
+        color: #F2CEF2;
+        &::placeholder{
             color: var(--button);
         }
-        button{
-            width: 150px;
-            padding: 10px 0;
-            border-radius: 38px;
-            margin: 7px auto;
-            background-color: var(--button);
-            border: none;
-            justify-content: center;
-            cursor: pointer;
-            transition: .25s all ease-out;
-            &:hover{
-                filter: drop-shadow(0 0 7px #F2CEF2);
-                color: var(--general);
-            }
+        &:focus{
+            outline: none;
         }
     }
 }
-.did-you-know{
-    width: 30%;
-    text-align: center;
-    margin: auto 0;
-    .fact{
-        padding: 25px;
-        background: url(../images/Enigme/Pantherenigme2.png) center/100% no-repeat;
-    }
+.question{
+    margin: 25px 0;
+}
+.wut{
+    font-size: 1.5em;
+    word-spacing: 10px;
+    color: var(--pinky);
 }
 
+.hint{
+    text-align: center;
+    padding: 120px 5px;
+    background: url(../images/Enigme/Pantherenigme2.png) right center/100% no-repeat;
+}
+//The popups
+.popup {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+#congratsPopup{
+    height: 100vh;
+    width: 100vw;
+    background-color: #11213f5e;
+    backdrop-filter: blur(5px);
+}
+#secondPopup{
+    min-width: 250px;
+    width: 30%;
+    height: max-content;
+    padding: 25px;
+    background: linear-gradient(to bottom, var(--button), var(--general));
+    span{
+        font-family: 'texte';
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .figma{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        .txt{
+            margin-left: 5px;
+        }
+    }
+}
 /*Responsive*/
 @media screen and (max-width: 900px) {
     #okoye{
@@ -224,25 +279,11 @@ footer {
     #enigme{
         height: 135vh;
         margin-top: 20%;
-        .container{
-            display: block;
-            margin: 0 5% 10% 13%;
-        }
+        display: block;
     }
-    .guess{
-        width: 100%;
-        .answer{
-            input{
-                width: 100%;
-            }
-        }
-        .div{
-            text-align: center;
-        }
-    }
-    .did-you-know{
-        margin: 10% auto 0;
-        max-width: 400px;
-        width: 100%;
+    .left, .right{
+        margin: 0;
+        width: 90%;
+        min-width: 250px;
     }
 }
