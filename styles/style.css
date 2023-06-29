@@ -121,13 +121,13 @@ footer {
 }
 
 /*slider cards*/
-#buste {
+/* #buste {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 75px;
-}
+} */
 
 /*Troisième partie*/
 #naissance {

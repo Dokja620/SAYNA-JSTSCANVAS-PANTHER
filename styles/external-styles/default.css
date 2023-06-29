@@ -1,40 +1,43 @@
-/*variable for the colors*/
-:root{
-    --general: #021740;
-    --pinky: #9E91B7;
-    --button: #F2CEF2;
+/* Variable for the colors */
+:root {
+  --general: #021740;
+  --pinky: #9E91B7;
+  --button: #F2CEF2;
 }
 
-/*...then let's reset the default styles*/
+/* Reset default styles */
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-weight: normal;
-    font-style: normal;
-    list-style: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  
-  @media screen and (max-width: 450px) {
-    .biographie h1 {
-      font-size: 4em;
-    }
-  }
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-/*voir plus*/
-.more{
+@media screen and (max-width: 450px) {
+  .biographie h1 {
+    font-size: 4em;
+  }
+}
+
+/* "View More" effect */
+.more {
   position: relative;
 }
-.more span{
+
+.more span {
   margin-left: 0;
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
-.more:hover span{
+
+.more:hover span {
   margin-left: 10px;
 }
-.more::after{
+
+.more::after {
   content: '';
   position: absolute;
   height: 1px;
@@ -42,61 +45,68 @@
   background-color: #fff;
   bottom: 0;
   left: 0;
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
-.more:hover::after{
+
+.more:hover::after {
   width: 85px;
 }
 
-/*animation on scroll*/
-.scroll{
+/* Animation on scroll */
+.scroll {
   transform: translateX(-50%);
   filter: blur(5px);
-  transition: .7s all;
+  transition: 0.7s all;
 }
-.appear{
+
+.appear {
   transform: translateX(0);
   filter: blur(0);
   opacity: 1;
 }
 
-@media(perfers-reduced-motion){
-  .scroll{
+@media (prefers-reduced-motion) {
+  .scroll {
     transition: none;
   }
 }
 
-/*zoom effect elements*/
-h1, h2, .portrait img{
-  transition: .25s all ease-in-out;
+/* Zoom effect on elements */
+h1,
+h2,
+.portrait img {
+  transition: 0.25s all ease-in-out;
   cursor: pointer;
 }
-.portrait img:hover{
+
+.portrait img:hover {
   transform: scale(1.01);
 }
 
-/*Custom cursor*/
-body{
+/* Custom cursor */
+body {
   height: 100vh;
 }
-.cursor{
+
+.cursor {
   position: absolute;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
 }
-.expand{
-  animation: cursorClick .5s forwards;
+
+.expand {
+  animation: cursorClick 0.5s forwards;
 }
 
 @keyframes cursorClick {
-  0%{
+  0% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(3);
   }
-  100%{
-    transform: scale(1);  
+  100% {
+    transform: scale(1);
     opacity: 0;
     filter: blur(5px);
   }
