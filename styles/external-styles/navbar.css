@@ -20,11 +20,11 @@
 
 .soc .second-line {
   height: calc(40vh - 100px);
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .social2 div a img {
-  margin: 5px 0;
+  margin: 5px;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
 }
