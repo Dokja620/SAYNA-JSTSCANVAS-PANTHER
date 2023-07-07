@@ -22,6 +22,88 @@
     font-size: 4em;
   }
 }
+/*The bgs*/
+body {
+  background: radial-gradient(ellipse at top left, #11213F 0%,#0B0B0B 100%),
+  radial-gradient(ellipse at top left,#021740 80%, transparent 0%),#000000;
+  background-attachment: fixed;
+  font-size: 12px;
+  color: white;
+  overflow-x: hidden;
+}
+
+footer {
+  height: max-content;
+  padding: 40px 0;
+  background: linear-gradient(#3D2DA6 5%, #021740 40%);
+}
+
+/* Define fonts */
+@font-face {
+  font-family: "Titre H1";
+  src: url(../fonts/panthera.otf);
+}
+@font-face {
+  font-family: "Titre H2";
+  src: url(../fonts/BEYNO.ttf);
+}
+@font-face {
+  font-family: "Enigme";
+  src: url(../fonts/WakandaForever-Regular.ttf);
+}
+@font-face {
+  font-family: "texte";
+  src: url(../fonts/Cantarell-Regular.ttf);
+}
+
+/* Typography */
+h1,
+h3,
+h4,
+p,
+q,
+span,
+.btn {
+  font-family: "texte";
+  color: white;
+}
+
+h1 {
+  font-size: 4em;
+  color: var(--pinky);
+}
+
+h2 {
+  font-family: 'Titre H2';
+  font-size: 2.6em;
+  color: var(--pinky);
+}
+
+p {
+  font-size: 1.3em;
+}
+
+q {
+  font-style: italic;
+}
+
+h3 {
+  font-size: 4em;
+}
+
+.btn {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.8em;
+  letter-spacing: 4px;
+}
+
+span {
+  font-family: "Enigme";
+}
 
 /* "View More" effect */
 .more {
