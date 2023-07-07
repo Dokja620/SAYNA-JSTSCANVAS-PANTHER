@@ -13,6 +13,9 @@
 }
 .ever{
     margin: 10%;
+    h1{
+        font-family: 'Titre H2';
+    }
     .ever-text{
         width: 300px;
         text-align: justify;
@@ -65,7 +68,11 @@
     width: 50%;
     .chars{
         img{
-            width: 100%;
+            width: 90%;
+            transition: transform .25s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }

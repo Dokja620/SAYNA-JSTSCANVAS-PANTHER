@@ -12,8 +12,10 @@ Les Quelques changement notable seront:
 - 100% de tout ce qui à été demander seras fait🤓
 - I think I'm just gonna do the slider... I'm not skilled enough. And importing from third party librairies would be unfair soo😜
 (pas 100% du coup🥴)
-!!! I did it... In 7days; away from hub😥 and with no really enough connection✌. But I did it I'm just Happy😊.
+
+!!! I did it... In 7days//kinda...maybe more than that//; away from hub😥 and with no really enough connection✌. But I did it I'm just Happy😊.
 N.B: La partie enigme... Pas totalement fait par moi😖 Des codes de youtubeur, sur stackoverflow... et beacoup d'autre...
+
     Si vous lisez ceci; pour que tout soit plus claire... 
     lisez mon SCSS au lieu du CSS
     Pour faciliter mon "codage" j'ai fait deux parties qui se superpose

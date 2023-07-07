@@ -15,6 +15,10 @@
 //Movie Intro
 .biographie{
     margin-left: 10vw;
+    h1{
+        font-family: 'Titre H1';
+        font-size: 5.6em;
+    }
     p{
         width: 30%;
     }
@@ -44,7 +48,7 @@
 
 /*slider cards*/
 #buste{
-    min-height: 100vh;
+    min-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,16 +117,21 @@
     .description2{
         text-align: center;
         padding-top: 150px;
+        font-family: 'texte';
         .btn2{
             display: flex;
             margin: 0 auto;
         }
         .description3{
             text-align: initial;
+            span{
+                font-weight: bold;
+                font-family: 'texte';
+            }
         }
     }
 }
-//panther random bacground
+//panther random background
 .panther{
     display: grid;
     align-content: center;
@@ -130,6 +139,11 @@
     margin-top: 50px;
     img{
         width: 300px;
+        transition: transform .3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 

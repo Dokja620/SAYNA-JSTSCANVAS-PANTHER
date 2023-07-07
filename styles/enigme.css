@@ -22,6 +22,9 @@
   width: 100%;
   max-width: 440px;
 }
+.defi .titre h1 {
+  font-family: "Titre H2";
+}
 .defi .charade {
   width: 90%;
   min-width: 280px;

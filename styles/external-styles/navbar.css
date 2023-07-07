@@ -5,7 +5,7 @@
   left: 2vw;
   display: flex;
   animation: top-bottom 0.7s ease-in 1s, display 1.3s ease;
-  z-index: 3;
+  z-index: 1000;
 }
 
 .soc .first-line,
