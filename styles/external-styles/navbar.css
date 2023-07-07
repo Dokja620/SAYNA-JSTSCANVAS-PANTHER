@@ -144,7 +144,7 @@ main {
 
   .nav-links {
     position: fixed;
-    background-color: #021740;
+    background: #02174073;
     backdrop-filter: blur(7px);
     width: 100vw;
     height: 100vh;
