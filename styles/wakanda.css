@@ -16,6 +16,9 @@
 .ever h1 {
   font-family: "Titre H2";
 }
+.ever h2 span {
+  font-family: "Enigme";
+}
 .ever .ever-text {
   width: 300px;
   text-align: justify;
@@ -54,7 +57,7 @@
 /*second section*/
 #origins {
   display: flex;
-  margin: 10% 30px;
+  margin: 10% 75px;
   text-align: justify;
   background: url(../images/Wakanda/Pantherwakanda2.png) top center/100% no-repeat;
 }
