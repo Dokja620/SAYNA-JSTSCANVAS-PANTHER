@@ -1,82 +1,8 @@
 /*import external libs*/
 //Why?? literaly the same style so why bother to copy and cut
-@import url(../styles/external-styles/default.css);
+@import url(../styles/default.css);
 @import url(../styles/external-styles/navbar.css);
 @import url(../styles/external-styles/footer.css);
-
-/*the fonts*/
-@font-face {
-    font-family: 'Titre H1';
-    src: url(../fonts/panthera.otf);
-}
-@font-face {
-    font-family: 'Titre H2';
-    src: url(../fonts/BEYNO.ttf);
-}
-@font-face {
-    font-family: 'Enigme';
-    src: url(../fonts/WakandaForever-Regular.ttf);
-}
-@font-face {
-    font-family: 'texte';
-    src: url(../fonts/Cantarell-Regular.ttf);
-}
-    //fonts
-    h1{
-        font-family: 'Titre H1';
-        font-size: 5.6em;
-        color: var(--pinky);
-    }
-    h2{
-        font-family: 'Titre H2';
-        font-size: 2.6em;
-        color: var(--pinky);
-    }
-    p{
-        font-family: 'texte';
-        font-size: 1.3em;
-    }
-    q{
-        font-family: 'texte';
-        font-size: 1em;
-        font-style: italic;
-    }       
-    h3{
-        font-family: 'texte';
-        font-size: 4em;   
-    }
-    .btn{
-        font-family: 'texte';
-        font-size: 1.1em;
-        font-weight: bold;
-    }
-    h4{
-        font-family: 'texte';
-        font-size: 1.8em;
-        letter-spacing: 4px;
-    }
-
-/*The bgs*/
-//Body
-html, body {
-    height: 100%;
-}
-  
-body {
-    margin: 0;
-    padding: 0;
-    background: #11213F url("../images/Allpages/arrière_plan.png") no-repeat;
-    background-size: cover;
-    font-size: 12px;
-    color: white;
-    overflow-x: hidden;
-}
-//Footer
-footer {
-    height: max-content;
-    padding: 40px 0;
-    background: url(../images/Allpages/back_footer.png) center/cover no-repeat;
-}
 
 /*Première partie*/
 #hommage{
@@ -89,6 +15,10 @@ footer {
 //Movie Intro
 .biographie{
     margin-left: 10vw;
+    h1{
+        font-family: 'Titre H1';
+        font-size: 5.6em;
+    }
     p{
         width: 30%;
     }
@@ -118,7 +48,7 @@ footer {
 
 /*slider cards*/
 #buste{
-    min-height: 100vh;
+    min-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,16 +117,21 @@ footer {
     .description2{
         text-align: center;
         padding-top: 150px;
+        font-family: 'texte';
         .btn2{
             display: flex;
             margin: 0 auto;
         }
         .description3{
             text-align: initial;
+            span{
+                font-weight: bold;
+                font-family: 'texte';
+            }
         }
     }
 }
-//panther random bacground
+//panther random background
 .panther{
     display: grid;
     align-content: center;
@@ -204,6 +139,11 @@ footer {
     margin-top: 50px;
     img{
         width: 300px;
+        transition: transform .3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 
