@@ -1,6 +1,8 @@
 # SAYNA-JSTSCANVAS-PANTHER
 ÉVALUATION - BLACK PANTHER - JAVASCRIPT - TYPESCRIPT - CANVAS
 
+Hosted by gitPage: https://dokja620.github.io/SAYNA-JSTSCANVAS-PANTHER/
+
 Deuxième évaluation🤖 Franchement avec mes compétence actuel; ça vas être compliquer😥...
 Qui ne tente rien n'as rien😁🥴 and As I said our aim is the highest grade📝
 Challenge accepted! Let's do it😊👌
