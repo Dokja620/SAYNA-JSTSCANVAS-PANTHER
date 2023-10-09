@@ -26,3 +26,6 @@ N.B: La partie enigme... Pas totalement fait par moi😖 Des codes de youtubeur,
     plus de clareté...
     Dernière chose... Les commentaires sont juste là pour indiquer quel partie
     est sur ces lignes... J'ai pas eu le temps d'expliquer lignes par ligne tout ce que j'ai fais.
+
+# Preview
+https://github.com/Dokja620/SAYNA-JSTSCANVAS-PANTHER/assets/126552855/3c837c9c-3a51-43ac-9fe3-132409af2571
