@@ -2,10 +2,11 @@
 @import url(../styles/default.css);
 @import url(../styles/external-styles/navbar.css);
 @import url(../styles/external-styles/footer.css);
+
 /*First section*/
 #okoye {
   height: 100vh;
-  background: url(../images/Enigme/Pantherenigme1.png) 5% 10px/50vw no-repeat, url(../images/Enigme/Pantherenigme3.png) 100% 90%/100% no-repeat;
+  background: url(../images/Enigme/Pantherenigme1.webp) 5% 10px/50vw no-repeat, url(../images/Enigme/Pantherenigme3.webp) 100% 90%/100% no-repeat;
   display: flex;
   align-items: center;
 }
@@ -18,19 +19,22 @@
   width: 40%;
   text-align: justify;
 }
+
 .defi .titre {
   width: 100%;
   max-width: 440px;
 }
+
 .defi .titre h1 {
   font-family: "Titre H2";
 }
+
 .defi .charade {
   width: 90%;
   min-width: 280px;
   font-size: 0.9em;
   padding: 60px 40PX;
-  background: url(../images/Enigme/Pantherenigme2.png) center/100% no-repeat;
+  background: url(../images/Enigme/Pantherenigme2.webp) center/100% no-repeat;
 }
 
 /*Second section*/
@@ -62,7 +66,9 @@ button {
   cursor: pointer;
   transition: 0.25s all ease-out;
 }
+
 button:hover {
+  -webkit-filter: drop-shadow(0 0 7px #F2CEF2);
   filter: drop-shadow(0 0 7px #F2CEF2);
   color: var(--general);
 }
@@ -70,6 +76,7 @@ button:hover {
 .description {
   text-align: justify;
 }
+
 .description h2 {
   text-decoration: underline;
 }
@@ -93,9 +100,27 @@ button:hover {
   width: 100%;
   color: #F2CEF2;
 }
+
+.enigme input::-webkit-input-placeholder {
+  color: var(--button);
+}
+
+.enigme input::-moz-placeholder {
+  color: var(--button);
+}
+
+.enigme input:-ms-input-placeholder {
+  color: var(--button);
+}
+
+.enigme input::-ms-input-placeholder {
+  color: var(--button);
+}
+
 .enigme input::placeholder {
   color: var(--button);
 }
+
 .enigme input:focus {
   outline: none;
 }
@@ -113,7 +138,7 @@ button:hover {
 .hint {
   text-align: center;
   padding: 120px 5px;
-  background: url(../images/Enigme/Pantherenigme2.png) right center/100% no-repeat;
+  background: url(../images/Enigme/Pantherenigme2.webp) right center/100% no-repeat;
 }
 
 .popup {
@@ -131,26 +156,32 @@ button:hover {
   height: 100vh;
   width: 100vw;
   background-color: rgba(17, 33, 63, 0.368627451);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
 
 #secondPopup {
   min-width: 250px;
   width: 30%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   padding: 25px;
   background: linear-gradient(to bottom, var(--button), var(--general));
 }
+
 #secondPopup span {
   font-family: "texte";
   font-weight: bold;
   letter-spacing: 2px;
 }
+
 #secondPopup .figma {
   display: flex;
   justify-content: center;
   text-align: left;
 }
+
 #secondPopup .figma .txt {
   margin-left: 5px;
 }
@@ -159,17 +190,20 @@ button:hover {
 @media screen and (max-width: 900px) {
   #okoye {
     height: 105vh;
-    background: url(../images/Enigme/Pantherenigme1.png) top center/95vw no-repeat, url(../images/Enigme/Pantherenigme3.png) bottom left/100% no-repeat;
+    background: url(../images/Enigme/Pantherenigme1.webp) top center/95vw no-repeat, url(../images/Enigme/Pantherenigme3.webp) bottom left/100% no-repeat;
     display: flex;
     align-items: center;
   }
+
   .vide {
     display: none;
   }
+
   .defi {
     padding-top: 350px;
     width: 100%;
   }
+
   .defi .titre {
     text-align: center;
     margin: 0 auto 3%;
@@ -177,6 +211,7 @@ button:hover {
     font-size: 0.9em;
     background: linear-gradient(to right, transparent, rgba(96, 14, 110, 0.4392156863), transparent);
   }
+
   .defi .charade {
     text-align: center;
     margin: 0 auto 0;
@@ -184,15 +219,17 @@ button:hover {
     min-width: 280px;
     font-size: 0.9em;
     padding: 30px 40PX;
-    background: url(../images/Enigme/Pantherenigme2.png) center/100% no-repeat;
+    background: url(../images/Enigme/Pantherenigme2.webp) center/100% no-repeat;
     text-shadow: 0 0 1px 4px rgba(8, 13, 23, 0.8117647059);
   }
 }
+
 @media screen and (max-width: 720px) {
   #okoye {
     height: 110vh;
   }
 }
+
 @media screen and (max-width: 620px) {
   .defi .charade {
     width: 100%;
@@ -201,22 +238,24 @@ button:hover {
     text-align: justify;
   }
 }
+
 @media screen and (max-width: 520px) {
   #okoye {
     height: 135vh;
   }
 }
+
 @media screen and (max-width: 900px) {
   #enigme {
     height: 135vh;
     margin-top: 20%;
     display: block;
   }
-  .left, .right {
+
+  .left,
+  .right {
     margin: 0;
     width: 90%;
     min-width: 250px;
   }
 }
-
-/*# sourceMappingURL=enigme.css.map */

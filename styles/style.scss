@@ -5,26 +5,29 @@
 @import url(../styles/external-styles/footer.css);
 
 /*Première partie*/
-#hommage{
+#hommage {
     height: 100vh;
     display: grid;
     align-items: center;
-    background: url(../images/Accueil/Pantherhome1..png) 90% 100px/50vw no-repeat;
+    background: url(../images/Accueil/Pantherhome1..webp) 90% 100px/50vw no-repeat;
 }
 
 //Movie Intro
-.biographie{
+.biographie {
     margin-left: 10vw;
-    h1{
+
+    h1 {
         font-family: 'Titre H1';
         font-size: 5.6em;
     }
-    p{
+
+    p {
         width: 30%;
     }
 }
+
 /*slider next button*/
-.next-button{
+.next-button {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -36,52 +39,62 @@
     top: 125px;
     right: 2%;
     z-index: 9;
-    &:hover{
-      filter: drop-shadow(0 0 15px #fff);
+
+    &:hover {
+        -webkit-filter: drop-shadow(0 0 15px #fff);
+        filter: drop-shadow(0 0 15px #fff);
     }
 }
-.next span{
+
+.next span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
     font-size: 2em;
 }
 
 /*slider cards*/
-#buste{
+#buste {
     min-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 75px;
 }
+
 /*Troisième partie*/
-#naissance{
+#naissance {
     margin: 25% 0;
 }
-.partI{
+
+.partI {
     display: flex;
     margin: 0 7vw;
     align-items: center;
+
     //TWO PART LEFT AND RIGHT
-    .autobio{
+    .autobio {
         width: 75%;
         margin-right: 5%;
         text-align: justify;
     }
-    .tchalla{
+
+    .tchalla {
         width: 25%;
         margin: 0 2.5%;
+
         /*The button like stuff*/
-        .btn2{
+        .btn2 {
             justify-content: center;
         }
-        h5{
+
+        h5 {
             text-align: center;
-            font-weight: bold; 
-            font-size: 2.5em; 
+            font-weight: bold;
+            font-size: 2.5em;
             font-family: 'Texte';
         }
-        h6{
+
+        h6 {
             background-color: #3D2DA6;
             margin: 6% 2%;
             color: white;
@@ -92,11 +105,14 @@
         }
     }
 }
-.second, .third{
+
+.second,
+.third {
     margin-top: 25px;
 }
+
 /*Carte description T'Challa*/
-.description{
+.description {
     text-align: center;
     background-color: #fff;
     border-radius: 2em;
@@ -105,57 +121,67 @@
     position: relative;
     width: 100%;
     min-width: 300px;
-    .portrait{
+
+    .portrait {
         position: absolute;
         top: -100px;
         left: -5px;
-        img{
+
+        img {
             width: 60%;
             min-width: 150px;
         }
     }
-    .description2{
+
+    .description2 {
         text-align: center;
         padding-top: 150px;
         font-family: 'texte';
-        .btn2{
+
+        .btn2 {
             display: flex;
             margin: 0 auto;
         }
-        .description3{
+
+        .description3 {
             text-align: initial;
-            span{
+
+            span {
                 font-weight: bold;
                 font-family: 'texte';
             }
         }
     }
 }
+
 //panther random background
-.panther{
+.panther {
     display: grid;
     align-content: center;
     text-align: center;
     margin-top: 50px;
-    img{
+
+    img {
         width: 300px;
         transition: transform .3s ease-in-out;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             transform: scale(1.2);
         }
     }
 }
 
 /*formulaire part*/
-#form{
+#form {
     height: 100vh;
     display: grid;
     align-content: center;
-    background: url(../images/Accueil/Pantherhome7.png) center/cover no-repeat;
+    background: url(../images/Accueil/Pantherhome7.webp) center/cover no-repeat;
     margin: 0 0 25%;
 }
-form{
+
+form {
     text-align: center;
     margin: 0 auto;
     padding: 25px 0;
@@ -165,7 +191,9 @@ form{
     color: var(--general);
     background: linear-gradient(to bottom, #fff, transparent);
     font-family: 'texte';
-    input, textarea{
+
+    input,
+    textarea {
         background: transparent;
         padding: 10px;
         margin: 5px 0;
@@ -173,19 +201,39 @@ form{
         border-radius: 25px;
         max-width: 400px;
         width: 50%;
-        &::placeholder{
+
+        &::-webkit-input-placeholder {
             color: var(--general);
         }
-        &:focus{
+
+        &::-moz-placeholder {
+            color: var(--general);
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--general);
+        }
+
+        &::-ms-input-placeholder {
+            color: var(--general);
+        }
+
+        &::placeholder {
+            color: var(--general);
+        }
+
+        &:focus {
             outline: none;
         }
     }
-    textarea{
+
+    textarea {
         border-radius: 15px;
         height: 200px;
     }
-    
-    #name_error, #email_error{
+
+    #name_error,
+    #email_error {
         margin: 3px auto 7px;
         font-size: 16px;
         max-width: 400px;
@@ -198,7 +246,8 @@ form{
         display: none;
     }
 }
-button{
+
+button {
     width: 150px;
     padding: 10px 0;
     border-radius: 38px;
@@ -207,12 +256,15 @@ button{
     border: none;
     cursor: pointer;
     transition: .25s all ease-out;
-    &:hover{
+
+    &:hover {
+        -webkit-filter: drop-shadow(0 0 7px #021740);
         filter: drop-shadow(0 0 7px #021740);
         color: var(--general);
     }
 }
-.popup{
+
+.popup {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -220,83 +272,103 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     background: #02174073;
+    -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     padding: 20px;
     border: 1px solid black;
     text-align: center;
     display: none;
-    h2{
+
+    h2 {
         margin-top: 35vh;
     }
-    button{
+
+    button {
         padding: 10px;
         width: 100px;
         margin-top: 25px;
     }
 }
-.error{
+
+.error {
     color: red;
 }
+
 @media screen and (max-width: 720px) {
-    form{
+    form {
         border-radius: 35px;
-        h3{
+
+        h3 {
             font-size: 3em;
         }
-        input, textarea{
+
+        input,
+        textarea {
             width: 85%;
         }
     }
 }
+
 @media screen and (max-width: 480px) {
-    form{
+    form {
         border-radius: 35px;
         margin: 7px 3% 7px 12%;
-        h3{
+
+        h3 {
             font-size: 2.7em;
         }
     }
 }
+
 /*partie responsive let's make things simple and use only one or two media query*/
 @media screen and (max-width: 900px) {
-    #hommage{
-        background: url(../images/Accueil/Pantherhome1..png) top center/90vw no-repeat;
+    #hommage {
+        background: url(../images/Accueil/Pantherhome1..webp) top center/90vw no-repeat;
     }
+
     //Movie Intro
-    .biographie{
+    .biographie {
         text-align: center;
         margin: 50% 75px 0;
-        h1{
+
+        h1 {
             font-size: 0 9vw;
         }
-        p{
+
+        p {
             width: 100%;
         }
-    }   
+    }
 }
+
 @media screen and (max-width: 820px) {
-    #naissance{
+    #naissance {
         margin: 0;
         padding-top: 20%;
     }
-    .partI{
+
+    .partI {
         display: block;
         margin: 0 12%;
+
         //TWO PART LEFT AND RIGHT
-        .autobio{
+        .autobio {
             width: 100%;
             text-align: justify;
         }
-        .tchalla{
+
+        .tchalla {
             width: 100%;
             display: grid;
             justify-content: center;
         }
     }
-    .description{
+
+    .description {
         margin-top: 125px;
         width: 250px;
-        .description2{
+
+        .description2 {
             padding-top: 150px;
         }
     }

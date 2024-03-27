@@ -5,50 +5,58 @@
 @import url(../styles/external-styles/footer.css);
 
 /*First section*/
-#okoye{
+#okoye {
     height: 100vh;
-    background: url(../images/Enigme/Pantherenigme1.png) 5% 10px/50vw no-repeat, url(../images/Enigme/Pantherenigme3.png) 100% 90%/100% no-repeat;
+    background: url(../images/Enigme/Pantherenigme1.webp) 5% 10px/50vw no-repeat, url(../images/Enigme/Pantherenigme3.webp) 100% 90%/100% no-repeat;
     display: flex;
     align-items: center;
 }
-.vide{
+
+.vide {
     width: 60%;
 }
-.defi{
+
+.defi {
     width: 40%;
     text-align: justify;
-    .titre{
+
+    .titre {
         width: 100%;
         max-width: 440px;
-        h1{
+
+        h1 {
             font-family: 'Titre H2';
         }
     }
-    .charade{
+
+    .charade {
         width: 90%;
         min-width: 280px;
         font-size: .9em;
         padding: 60px 40PX;
-        background: url(../images/Enigme/Pantherenigme2.png) center/100% no-repeat;
+        background: url(../images/Enigme/Pantherenigme2.webp) center/100% no-repeat;
     }
 }
 
 /*Second section*/
-#enigme{
+#enigme {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10px 0 13%;
 }
-.left{
+
+.left {
     width: 35%;
     margin-right: 5%;
 }
-.right{
+
+.right {
     width: 50%;
     margin-left: 5%;
 }
-button{
+
+button {
     font-family: 'texte';
     width: 155px;
     padding: 10px 0;
@@ -58,26 +66,33 @@ button{
     border: none;
     cursor: pointer;
     transition: .25s all ease-out;
-    &:hover{
+
+    &:hover {
+        -webkit-filter: drop-shadow(0 0 7px #F2CEF2);
         filter: drop-shadow(0 0 7px #F2CEF2);
         color: var(--general);
     }
 }
-.description{
+
+.description {
     text-align: justify;
-    h2{
+
+    h2 {
         text-decoration: underline;
     }
 }
-.whut{
+
+.whut {
     font-size: 1.2em;
 }
-.important{
+
+.important {
     font-family: 'texte';
     font-size: .9em;
 }
-.enigme{
-    input{
+
+.enigme {
+    input {
         background: transparent;
         padding: 10px;
         margin: 5px 0;
@@ -86,28 +101,49 @@ button{
         max-width: 400px;
         width: 100%;
         color: #F2CEF2;
-        &::placeholder{
+
+        &::-webkit-input-placeholder {
             color: var(--button);
         }
-        &:focus{
+
+        &::-moz-placeholder {
+            color: var(--button);
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--button);
+        }
+
+        &::-ms-input-placeholder {
+            color: var(--button);
+        }
+
+        &::placeholder {
+            color: var(--button);
+        }
+
+        &:focus {
             outline: none;
         }
     }
 }
-.question{
+
+.question {
     margin: 25px 0;
 }
-.wut{
+
+.wut {
     font-size: 1.5em;
     word-spacing: 10px;
     color: var(--pinky);
 }
 
-.hint{
+.hint {
     text-align: center;
     padding: 120px 5px;
-    background: url(../images/Enigme/Pantherenigme2.png) right center/100% no-repeat;
+    background: url(../images/Enigme/Pantherenigme2.webp) right center/100% no-repeat;
 }
+
 //The popups
 .popup {
     z-index: 2;
@@ -119,73 +155,88 @@ button{
     padding: 20px;
     text-align: center;
 }
-#congratsPopup{
+
+#congratsPopup {
     height: 100vh;
     width: 100vw;
     background-color: #11213f5e;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
-#secondPopup{
+
+#secondPopup {
     min-width: 250px;
     width: 30%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     padding: 25px;
     background: linear-gradient(to bottom, var(--button), var(--general));
-    span{
+
+    span {
         font-family: 'texte';
         font-weight: bold;
         letter-spacing: 2px;
     }
-    .figma{
+
+    .figma {
         display: flex;
         justify-content: center;
         text-align: left;
-        .txt{
+
+        .txt {
             margin-left: 5px;
         }
     }
 }
+
 /*Responsive*/
 @media screen and (max-width: 900px) {
-    #okoye{
+    #okoye {
         height: 105vh;
-        background: url(../images/Enigme/Pantherenigme1.png) top center/95vw no-repeat, url(../images/Enigme/Pantherenigme3.png) bottom left/100% no-repeat;
+        background: url(../images/Enigme/Pantherenigme1.webp) top center/95vw no-repeat, url(../images/Enigme/Pantherenigme3.webp) bottom left/100% no-repeat;
         display: flex;
         align-items: center;
     }
-    .vide{
+
+    .vide {
         display: none;
     }
-    .defi{
+
+    .defi {
         padding-top: 350px;
         width: 100%;
-        .titre{
+
+        .titre {
             text-align: center;
             margin: 0 auto 3%;
             width: 70%;
             font-size: .9em;
             background: linear-gradient(to right, transparent, #600e6e70, transparent);
         }
-        .charade{
+
+        .charade {
             text-align: center;
             margin: 0 auto 0;
             width: 70%;
             min-width: 280px;
             font-size: .9em;
             padding: 30px 40PX;
-            background: url(../images/Enigme/Pantherenigme2.png) center/100% no-repeat;
+            background: url(../images/Enigme/Pantherenigme2.webp) center/100% no-repeat;
             text-shadow: 0 0 1px 4px #080d17cf;
         }
     }
 }
+
 @media screen and (max-width: 720px) {
-    #okoye{
+    #okoye {
         height: 110vh;
     }
 }
+
 @media screen and (max-width: 620px) {
-    .defi{
-        .charade{
+    .defi {
+        .charade {
             width: 100%;
             background: none;
             font-size: 1em;
@@ -193,18 +244,22 @@ button{
         }
     }
 }
+
 @media screen and (max-width: 520px) {
-    #okoye{
+    #okoye {
         height: 135vh;
     }
 }
+
 @media screen and (max-width: 900px) {
-    #enigme{
+    #enigme {
         height: 135vh;
         margin-top: 20%;
         display: block;
     }
-    .left, .right{
+
+    .left,
+    .right {
         margin: 0;
         width: 90%;
         min-width: 250px;

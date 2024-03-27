@@ -4,6 +4,7 @@
   top: 0;
   left: 2vw;
   display: flex;
+  -webkit-animation: top-bottom 0.7s ease-in 1s, display 1.3s ease;
   animation: top-bottom 0.7s ease-in 1s, display 1.3s ease;
   z-index: 1000;
 }
@@ -30,33 +31,64 @@
 }
 
 .social2 div a img:hover {
+  -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
+}
+
+@-webkit-keyframes display {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes display {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes top-bottom {
+  from {
+    transform: translateY(-100%);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
   }
 }
 
 @keyframes top-bottom {
   from {
     transform: translateY(-100%);
+    -webkit-filter: blur(2px);
     filter: blur(2px);
   }
 }
 
 .navbar,
 main {
+  -webkit-animation: left-right 0.7s ease-in;
   animation: left-right 0.7s ease-in;
+}
+
+@-webkit-keyframes left-right {
+  from {
+    transform: translateX(-20%);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
 }
 
 @keyframes left-right {
   from {
     transform: translateX(-20%);
+    -webkit-filter: blur(2px);
     filter: blur(2px);
   }
 }
@@ -123,6 +155,7 @@ main {
 }
 
 .log-x-m img:hover {
+  -webkit-filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(150%) contrast(1);
   filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(150%) contrast(1);
 }
 
@@ -145,6 +178,7 @@ main {
   .nav-links {
     position: fixed;
     background: #02174073;
+    -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     width: 100vw;
     height: 100vh;
@@ -156,9 +190,9 @@ main {
     margin-left: -100vw;
     transition: all 0.5s ease-in-out;
     z-index: 2;
- 
 
- }
+
+  }
 
   .nav-links ul {
     display: flex;

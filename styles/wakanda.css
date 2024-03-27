@@ -2,23 +2,27 @@
 @import url(../styles/default.css);
 @import url(../styles/external-styles/navbar.css);
 @import url(../styles/external-styles/footer.css);
+
 /*First section*/
 #city {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: url(../images/Wakanda/Pantherwakanda1.png) 70% 30%/cover no-repeat;
+  background: url(../images/Wakanda/Pantherwakanda1.webp) 70% 30%/cover no-repeat;
 }
 
 .ever {
   margin: 10%;
 }
+
 .ever h1 {
   font-family: "Titre H2";
 }
+
 .ever h2 span {
   font-family: "Enigme";
 }
+
 .ever .ever-text {
   width: 300px;
   text-align: justify;
@@ -30,21 +34,25 @@
   .ever-title {
     background: linear-gradient(to right, transparent, rgba(220, 22, 22, 0.3254901961), transparent);
   }
+
   .ever-text {
     background: linear-gradient(to right, rgba(98, 7, 106, 0.4666666667), transparent);
     padding-left: 5px;
   }
 }
+
 @media screen and (max-width: 640px) {
   #city {
     height: 100vh;
     display: flex;
     align-items: center;
   }
+
   .ever {
     display: grid;
     text-align: center;
   }
+
   .ever .ever-text {
     width: 90%;
     text-align: justify;
@@ -54,12 +62,13 @@
     padding-left: 0;
   }
 }
+
 /*second section*/
 #origins {
   display: flex;
   margin: 10% 75px;
   text-align: justify;
-  background: url(../images/Wakanda/Pantherwakanda2.png) top center/100% no-repeat;
+  background: url(../images/Wakanda/Pantherwakanda2.webp) top center/100% no-repeat;
 }
 
 .leftpart {
@@ -71,10 +80,12 @@
   margin-left: 20px;
   width: 50%;
 }
+
 .rightpart .chars img {
   width: 90%;
   transition: transform 0.25s ease-in-out;
 }
+
 .rightpart .chars img:hover {
   transform: scale(1.1);
 }
@@ -85,14 +96,14 @@
     display: block;
     margin: 10% 10% 10% 13%;
   }
+
   .leftpart {
     margin-right: 0;
     width: 100%;
   }
+
   .rightpart {
     margin-left: 0;
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=wakanda.css.map */

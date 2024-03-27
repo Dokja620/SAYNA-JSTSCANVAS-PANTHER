@@ -83,10 +83,12 @@
   .foot {
     display: block;
   }
+
   .foot .img1 {
     width: 300px;
     margin: 0 auto;
   }
+
   .section1 h4 {
     margin-top: 10%;
   }
@@ -96,6 +98,7 @@
   .foot {
     font-size: 0.9em;
   }
+
   .bottom {
     display: block;
     text-align: center;

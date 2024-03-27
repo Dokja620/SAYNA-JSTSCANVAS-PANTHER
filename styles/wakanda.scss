@@ -5,48 +5,57 @@
 @import url(../styles/external-styles/footer.css);
 
 /*First section*/
-#city{
+#city {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../images/Wakanda/Pantherwakanda1.png) 70% 30%/cover no-repeat;
+    background: url(../images/Wakanda/Pantherwakanda1.webp) 70% 30%/cover no-repeat;
 }
-.ever{
+
+.ever {
     margin: 10%;
-    h1{
+
+    h1 {
         font-family: 'Titre H2';
     }
-    h2{
-        span{
+
+    h2 {
+        span {
             font-family: 'Enigme';
         }
     }
-    .ever-text{
+
+    .ever-text {
         width: 300px;
         text-align: justify;
         font-size: .9em;
         margin-top: 25px;
     }
 }
+
 @media screen and (max-width: 900px) {
-    .ever-title{
+    .ever-title {
         background: linear-gradient(to right, transparent, #dc161653, transparent);
     }
-    .ever-text{
-        background: linear-gradient(to right,#62076a77, transparent);
+
+    .ever-text {
+        background: linear-gradient(to right, #62076a77, transparent);
         padding-left: 5px;
     }
 }
+
 @media screen and (max-width: 640px) {
-    #city{
+    #city {
         height: 100vh;
         display: flex;
         align-items: center;
     }
-    .ever{
+
+    .ever {
         display: grid;
         text-align: center;
-        .ever-text{
+
+        .ever-text {
             width: 90%;
             text-align: justify;
             font-size: 1em;
@@ -58,24 +67,28 @@
 }
 
 /*second section*/
-#origins{
+#origins {
     display: flex;
     margin: 10% 75px;
     text-align: justify;
-    background: url(../images/Wakanda/Pantherwakanda2.png) top center/100% no-repeat;
+    background: url(../images/Wakanda/Pantherwakanda2.webp) top center/100% no-repeat;
 }
-.leftpart{
+
+.leftpart {
     margin-right: 20px;
     width: 50%;
 }
-.rightpart{
+
+.rightpart {
     margin-left: 20px;
     width: 50%;
-    .chars{
-        img{
+
+    .chars {
+        img {
             width: 90%;
             transition: transform .25s ease-in-out;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
             }
         }
@@ -84,17 +97,19 @@
 
 /*Responsive*/
 @media screen and (max-width: 900px) {
-    #origins{
+    #origins {
         display: block;
         margin: 10% 10% 10% 13%;
     }
-    .leftpart{
+
+    .leftpart {
         margin-right: 0;
         width: 100%;
     }
-    .rightpart{
+
+    .rightpart {
         margin-left: 0;
         width: 100%;
     }
-    
+
 }
